@@ -30,24 +30,42 @@ Numil is a cross-platform mobile productivity application built with Expo and Re
 - src/types: shared TypeScript models
 - docs/: product and developer documentation
 
-## Getting started
+## Installation
 
-1. Install dependencies
-   ```bash
-   npm install
-   ```
+### 1. Install Node.js
+Make sure Node.js is installed on your machine.
 
-2. Start the app
-   ```bash
-   npm start
-   ```
+### 2. Install dependencies
+```bash
+npm install
+```
 
-3. Run on a target platform
-   ```bash
-   npm run android
-   npm run ios
-   npm run web
-   ```
+### 3. Start the app
+```bash
+npm start
+```
+
+## Run on different platforms
+
+### Android
+```bash
+npm run android
+```
+
+### iOS
+```bash
+npm run ios
+```
+
+### Web
+```bash
+npm run web
+```
+
+## Linting
+```bash
+npm run lint
+```
 
 ## Documentation
 
