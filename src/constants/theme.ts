@@ -1,6 +1,5 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Todos color system — blue + green focused, clean and colorful.
  */
 
 import '@/global.css';
@@ -9,18 +8,34 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#0B1F33',
+    background: '#EAF6F1',
+    card: '#FFFFFF',
+    backgroundElement: '#D7F0E8',
+    backgroundSelected: '#C5E8FC',
+    textSecondary: '#4A667A',
+    tint: '#1A7AE8',
+    accent: '#12A36A',
+    onTint: '#FFFFFF',
+    success: '#12A36A',
+    warning: '#E09B1B',
+    danger: '#E04848',
+    separator: '#C9E2D8',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: '#F4FBFF',
+    background: '#07141F',
+    card: '#0F2433',
+    backgroundElement: '#143042',
+    backgroundSelected: '#1A3D55',
+    textSecondary: '#9BB4C7',
+    tint: '#4DA3FF',
+    accent: '#2DD48A',
+    onTint: '#062018',
+    success: '#2DD48A',
+    warning: '#F0C04A',
+    danger: '#FF6B6B',
+    separator: '#1E3A4C',
   },
 } as const;
 
@@ -28,13 +43,9 @@ export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
     sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
